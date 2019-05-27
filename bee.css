@@ -13,7 +13,7 @@ body{
 input{position:fixed; left:-10px; top:-10px;} /* 새 그릇 위 치  -는 숨겨짐 */
 
 h1{margin:0; text-align:center;
-position:fixed; left:450px; top:750px;
+position:fixed; /*left:450px; top:750px;*/
 }
 
 
@@ -40,7 +40,7 @@ position:fixed; left:450px; top:750px;
 #sum{position:fixed; left:45%; top:100px; font-size:24px; fonot-weight:bold;}
 #sum:after{
   content: "Esacped Bee : " counter(bees) " ";
-  position:fixed; left:450px; top:700px;
+  position:fixed; /*left:450px; top:700px;*/
            }
 
 
