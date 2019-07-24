@@ -54,7 +54,7 @@
 <div class="gameover">Time Out</div>
 
 
-<h1> Bee Game </h1>
+<h1> 노래하는 벌을 찾아라 </h1>
 	<input type="radio" id="container1" class="input-container input-container1"> 
 	<input type="radio" id="container2" class="input-container input-container2">
 	<input type="radio" id="container3" class="input-container input-container3">
@@ -66,7 +66,7 @@
   <input type="radio" id="container9" class="input-container input-container9">
   <input type="radio" id="container10" class="input-container input-container10">
 
-	<label for="container1" class="bee bee01"><span></span></label>  <!-- bird 나타남 -->
+	<label for="container1" class="bee bee01"onclick="playAudio()" ondblclick="playAudio()"><span></span></label>  <!-- 노래가 나옴 bird 나타남 -->
 	<label for="container2" class="bee bee02"><span></span></label>
 	<label for="container3" class="bee bee03"><span></span></label>
 	<label for="container4" class="bee bee04"><span></span></label>
@@ -95,6 +95,29 @@
   </div>
 
 <div id="sum"></div>
+
+<audio id="myAudio">
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="나그대에게.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play();
+
+ document.getElementById("sum").innerHTML = "YOU WIN"; 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+  
+} 
+</script>
+
+
 
   <a class="btn blue" href="index.html">Restart</a>
   <!--<a class="btn red" href="bee.html">Menu</a>-->
