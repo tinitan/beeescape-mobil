@@ -39,6 +39,13 @@
     .btn.red:active{
       border-bottom:2px solid #c1370e;
     }
+
+   /*.IMG {
+      background-color: #ff521e;
+      border-bottom:5px solid #c1370e;
+      position:fixed; left:350px; top:700px;
+    }*/
+
   </style>
   <!-- css 삽입 필요시 분리 -->
   
@@ -95,7 +102,7 @@
   </div>
 
 <div id="sum"></div>
-
+<img id="sumdown" src="https://leuke-plaatjes.com/files/leuke-plaatjes-smiley/activiteit/smiley-activiteit-gapen.gif" width="50" height="50">
 <audio id="myAudio">
   <source src="horse.ogg" type="audio/ogg">
   <source src="나그대에게.mp3" type="audio/mpeg">
@@ -104,10 +111,16 @@
 
 <script>
 var x = document.getElementById("myAudio"); 
-
+//var y = document.createElement("IMG");
 function playAudio() { 
   x.play();
+  //y.setAttribute("src", "pul.png");
+ // y.setAttribute("width", "304");
+ // y.setAttribute("height", "228");
+ // y.setAttribute("alt", "The Pulpit Rock");
 
+ // document.body.appendChild(y);
+ document.getElementById("sumdown").src = "https://leuke-plaatjes.com/files/leuke-plaatjes-emoticons/dieren/dieren-emoticons-2552772479.gif";
  document.getElementById("sum").innerHTML = "YOU WIN"; 
 } 
 
@@ -117,6 +130,16 @@ function pauseAudio() {
 } 
 </script>
 
+<script>
+//function myFunction() {
+// var y = document.createElement("IMG");
+//  y.setAttribute("src", "img_pulpit.jpg");
+//  y.setAttribute("width", "304");
+ // y.setAttribute("height", "228");
+ // y.setAttribute("alt", "The Pulpit Rock");
+//  document.body.appendChild(y);
+//}
+</script>
 
 
   <a class="btn blue" href="index.html">Restart</a>

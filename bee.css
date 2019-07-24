@@ -38,6 +38,7 @@ position:fixed; /*left:450px; top:750px;*/
 }
 /*print to screen dead birds*/
 #sum{position:fixed; left:45%; top:100px; font-size:24px; fonot-weight:bold;}
+#sumdown{position:fixed; left:45%; top:130px; font-size:24px; fonot-weight:bold;}
 /*#sum:after{
   content: "Esacped Bee : " counter(bees) " ";
   position:fixed; /*left:450px; top:700px;*/
