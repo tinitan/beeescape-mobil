@@ -37,18 +37,20 @@ position:fixed; /*left:450px; top:750px;*/
   counter-increment:bees;
 }
 /*print to screen dead birds*/
+
+
 #sum{position:fixed; left:45%; top:100px; font-size:24px; fonot-weight:bold;}
 #sumdown{position:fixed; left:45%; top:130px; font-size:24px; fonot-weight:bold;}
 /*#sum:after{
-  content: "Esacped Bee : " counter(bees) " ";
+  content: counter(bees);
   position:fixed; /*left:450px; top:700px;*/
-/*           }*/
+ /*          }*/
 
 
 .input-container ~ .bee, .input-container ~ .beea, .input-container ~ .beeb {
-  opacity:0;      /* container 0 숨기기 1 나타내기 */
+  opacity:0.5;      /* container 0 숨기기 1 나타내기 */
   transition: 0.3s;  /* cubic-bezier(0,.43,1,0); /*captured 포시 */
-  animation: move 8s infinite alternate; /* butterfly 움직임 */
+  /*animation: move 8s infinite alternate; /* butterfly 움직임 */
 }
 
 
@@ -63,10 +65,11 @@ position:fixed; /*left:450px; top:750px;*/
 .input-container9:not(:checked) ~ .beeb02,
 .input-container10:not(:checked) ~ .beeb03
 {
+  animation: move 8s infinite alternate; /* butterfly 움직임 */
   opacity:1; 
 }
 
-/*"I'm Dead!" class 임 */
+/*"I'm Dead!" class 임 *
 .input-container1:checked ~ .bee01 span,
 .input-container2:checked ~ .bee02 span,
 .input-container3:checked ~ .bee03 span,
@@ -79,8 +82,8 @@ position:fixed; /*left:450px; top:750px;*/
 .input-container10:checked ~ .beeb03 span
 {
   display:block;
-  
- }
+    
+ }*/
 
 
 
@@ -164,25 +167,25 @@ position:fixed; /*left:450px; top:750px;*/
 
 
 .gameover{
-  position:fixed; z-index:100000; left:0; top:0; bottom:0; right:0; background-color:rgba(0,0,0,0.2);
+  position:fixed; z-index:100000; left:0; top:0; /*bottom:0;*/ right:0; background-color:rgba(0,0,0,0.2);
   
   animation:gameover 30s linear forwards; /* 게임시간 */
   font-size:80px; color:white; font-weight:bold; text-align:center; 
   text-indent:0;  
-  line-height:500px;
+  line-height:650px;
 }
 
 @keyframes gameover{
 0%{left:-5000px;bottom:100%;}
 97%{left:-5000px;bottom:100%;}
-100%{ left:0px;bottom:10%;}
+100%{ left:0px;/*bottom:15%;*/}
 }
 
 
 .bee{
   background-image: url("./img/bee1.png");
   background-size: auto 100%;   /*auto 100%; /* 새크기 */
-  margin-top:200px; margin-left:100px; /* 날아다니는 위치 조정 */
+  margin-top:200px; margin-left:-100px; /* 날아다니는 위치 조정(안보이게 화면 밖으로 위치(-) 조정) */
   width: 23px; height: 30px; /* 새담는 그룻 크기 */
   /* animation: mov 0.8s linear infinite;*/
   z-index:999;
@@ -190,7 +193,7 @@ position:fixed; /*left:450px; top:750px;*/
 .beea{
   background-image: url("./img/bee2.png");
   background-size: auto 100%;   /*auto 100%; /* 새크기 */
-  margin-top:100px; margin-left:50px; /* 날아다니는 위치 조정 */
+  margin-top:100px; margin-left:-50px; /* 날아다니는 위치 조정 (안보이게 화면 밖으로 위치(-) 조정)*/
   width: 33px; height: 30px; /* 새담는 그룻 크기 */
   z-index:999;
 }
@@ -198,7 +201,7 @@ position:fixed; /*left:450px; top:750px;*/
 .beeb{
   background-image: url("./img/bee3.png");
   background-size: auto 100%;   /*auto 100%; /* 새크기 */
-  margin-top:100px; margin-left:50px; /* 날아다니는 위치 조정 */
+  margin-top:100px; margin-left:-50px; /* 날아다니는 위치 조정(안보이게 화면 밖으로 위치(-) 조정) */
   width: 33px; height: 30px; /* 새담는 그룻 크기 */
   z-index:999;
 }
