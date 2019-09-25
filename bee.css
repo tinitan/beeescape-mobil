@@ -60,7 +60,7 @@ position:fixed; /*left:450px; top:750px;*/
 .input-container9:not(:checked) ~ .beeb02,
 .input-container10:not(:checked) ~ .beeb03
 {
-  animation: move 5s infinite alternate; /* 드론 에니에이션 */
+  animation: move 6s infinite alternate; /* 드론 에니에이션 */
   opacity:1; 
 }
 
@@ -164,7 +164,7 @@ position:fixed; /*left:450px; top:750px;*/
 .gameover{
   position:fixed; z-index:100000; left:0; top:0; /*bottom:0;*/ right:0; background-color:rgba(0,0,0,0.2);
   
-  animation:gameover 25s linear forwards; /* 게임시간 */
+  animation:gameover 30s linear forwards; /* 게임시간 */
   font-size:80px; color:white; font-weight:bold; text-align:center; 
   text-indent:0;  
   line-height:650px;
