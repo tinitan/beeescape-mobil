@@ -60,7 +60,7 @@ position:fixed; /*left:450px; top:750px;*/
 .input-container9:not(:checked) ~ .beeb02,
 .input-container10:not(:checked) ~ .beeb03
 {
-  animation: move 3s infinite alternate; /* 드론 에니에이션 */
+  animation: move 5s infinite alternate; /* 드론 에니에이션 */
   opacity:1; 
 }
 
@@ -178,26 +178,29 @@ position:fixed; /*left:450px; top:750px;*/
 
 
 .bee{
-  background-image: url("./img/bee1.png");
+  background-image: url("./img/dron.png");
   background-size: auto 100%;   /*auto 100%; /* 드론크기 */
+  background-repeat: no-repeat;
   margin-top:200px; margin-left:-100px; /* 날아다니는 위치 조정(안보이게 화면 밖으로 위치(-) 조정) */
-  width: 20px; height: 20px; /* 새담는 그룻 크기 */
+  width: 100px; height: 100px; /* 새담는 그룻 크기 */
   /* animation: mov 0.8s linear infinite;*/
   z-index:999;
 }
 .beea{
-  background-image: url("./img/bee2.png");
+  background-image: url("./img/dron.png");
   background-size: auto 100%;   /*auto 100%; /* 드론크기 */
+  background-repeat: no-repeat;
   margin-top:100px; margin-left:-50px; /* 날아다니는 위치 조정 (안보이게 화면 밖으로 위치(-) 조정)*/
-  width: 33px; height: 30px; /* 드론담는 크기 */
+  width: 80px; height: 80px; /* 드론담는 크기 */
   z-index:999;
 }
 
 .beeb{
-  background-image: url("./img/bee3.png");
+  background-image: url("./img/dron.png");
   background-size: auto 100%;   /*auto 100%; /* 드론크기 */
+  background-repeat: no-repeat;
   margin-top:100px; margin-left:-50px; /* 날아다니는 위치 조정(안보이게 화면 밖으로 위치(-) 조정) */
-  width: 33px; height: 30px; /* 드론담는 크기 */
+  width: 50px; height: 50px; /* 드론담는 크기 */
   z-index:999;
 }
 
