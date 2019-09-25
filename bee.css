@@ -10,7 +10,7 @@ body{
     }
 
 /*hide checkbox*/
-input{position:fixed; left:-10px; top:-10px;} /* 새 그릇 위 치  -는 숨겨짐 */
+input{position:fixed; left:-100px; top:-100px;} /* 새 그릇 위 치  -는 숨겨짐 */
 
 h1{margin:0; text-align:center;
 position:fixed; /*left:450px; top:750px;*/
@@ -25,7 +25,7 @@ position:fixed; /*left:450px; top:750px;*/
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 95%; 
+  width: 100%; 
   min-height: 35rem;
   background-image:url("./img/spring.jpg");
   background-repeat: no-repeat;
