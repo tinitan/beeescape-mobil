@@ -60,7 +60,7 @@ position:fixed; /*left:450px; top:750px;*/
 .input-container9:not(:checked) ~ .beeb02,
 .input-container10:not(:checked) ~ .beeb03
 {
-  animation: move 3.5s infinite alternate; /* 드론 에니에이션 */
+  animation: move 5s infinite alternate; /* 드론 에니에이션 */
   opacity:1; 
 }
 
@@ -100,7 +100,7 @@ position:fixed; /*left:450px; top:750px;*/
 
 .bee01{
   /*top:50px;*/
-  animation-delay: -2s!important;
+  animation-delay: 2s!important;
   transform:scale(0.9);
 }
 .bee02{
@@ -110,7 +110,7 @@ position:fixed; /*left:450px; top:750px;*/
 }
 .bee03{
   /*top:200px;*/
-  animation-delay: -3s!important;
+  animation-delay: 3s!important;
   transform:scale(1.4); 
 }
 .bee04{
@@ -120,7 +120,7 @@ position:fixed; /*left:450px; top:750px;*/
 }
 .bee05{
   /*top:100px;*/
-  animation-delay: -12s!important;
+  animation-delay: 12s!important;
   transform:scale(1.0);
 }
 .beea01{
@@ -130,7 +130,7 @@ position:fixed; /*left:450px; top:750px;*/
 }
 .beea02{
   /*top:50px;*/
-  animation-delay: -8s!important;
+  animation-delay: 8s!important;
   transform:scale(1.0);
 }
 .beeb01{
@@ -140,7 +140,7 @@ position:fixed; /*left:450px; top:750px;*/
 }
 .beeb02{
   /*top:50px;*/
-  animation-delay: -5s!important;
+  animation-delay: 5s!important;
   transform:scale(1.0);
 }
 .beeb03{
@@ -164,7 +164,7 @@ position:fixed; /*left:450px; top:750px;*/
 .gameover{
   position:fixed; z-index:100000; left:0; top:0; /*bottom:0;*/ right:0; background-color:rgba(0,0,0,0.2);
   
-  animation:gameover 30s linear forwards; /* 게임시간 */
+  animation:gameover 25s linear forwards; /* 게임시간 */
   font-size:80px; color:white; font-weight:bold; text-align:center; 
   text-indent:0;  
   line-height:650px;
