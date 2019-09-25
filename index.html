@@ -115,7 +115,7 @@ function playAudio() {
 
  var sc = $("#sum").text(parseInt($("#sum").text())+1); /* 클릭시 두번 실행 됨 ????*/
  var ss = $("#sum").text(); /* ㅎㅎ 성공 */
- if(ss==10) {
+ if(ss>=10) {
   document.getElementById("sum").innerHTML = "YOU WIN";
   document.getElementById("sumdown").src = "https://leuke-plaatjes.com/files/leuke-plaatjes-emoticons/dieren/dieren-emoticons-2552772479.gif";
 
