@@ -26,7 +26,7 @@
     .btn.blue{
       background-color: #1f75d9;
       border-bottom:5px solid #165195;
-      position:fixed; left:200px; bottom:5px;
+      position:fixed; left:250px; bottom:5px;
     }
     .btn.blue:active{
       border-bottom:2px solid #165195;
@@ -56,7 +56,7 @@
 <!--<div class="gameover">Time Out</div>-->
 
 
-<h1 style = color:white;>Dron Invasion </h1>
+<h1>Dron Invasion</h1>
 	<input type="radio" id="container1" class="input-container input-container1"> 
 	<input type="radio" id="container2" class="input-container input-container2">
 	<input type="radio" id="container3" class="input-container input-container3">
@@ -115,7 +115,7 @@ function playAudio() {
 
  var sc = $("#sum").text(parseInt($("#sum").text())+1); /* 클릭시 두번 실행 됨 ????*/
  var ss = $("#sum").text(); /* ㅎㅎ 성공 */
- if(ss==12) {
+ if(ss==10) {
   document.getElementById("sum").innerHTML = "YOU WIN";
   document.getElementById("sumdown").src = "https://leuke-plaatjes.com/files/leuke-plaatjes-emoticons/dieren/dieren-emoticons-2552772479.gif";
 
