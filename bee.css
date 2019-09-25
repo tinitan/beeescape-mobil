@@ -17,6 +17,7 @@ position:fixed; /*left:450px; top:750px;*/
 }
 
 
+
 .wrapper{ 
   z-index: 1;
   position: relative;
@@ -24,10 +25,11 @@ position:fixed; /*left:450px; top:750px;*/
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 95%; 
   min-height: 35rem;
-  background-image: linear-gradient(to bottom, rgba(255, 168, 76, 0.6) 0%, rgba(255, 123, 13, 0.6) 100%), url("./img/spring.jpg");
-  background-blend-mode: soft-light;
-  background-size: cover;
+  background-image:url("./img/spring.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-position: center center;
   padding: 2rem;
   cursor:crosshair;
