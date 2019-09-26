@@ -43,7 +43,7 @@ position:fixed; /*left:450px; top:750px;*/
 #sumdown{position:fixed; left:45%; top:130px; font-size:24px; fonot-weight:bold;}
 
 .input-container ~ .bee, .input-container ~ .beea, .input-container ~ .beeb {
-  opacity:0.5;      /* container 0 숨기기 1 나타내기 */
+  opacity:1;      /* container 0 숨기기 1 나타내기 */
   transition: 0.3s;  /* cubic-bezier(0,.43,1,0); /*captured 포시 */
   /*animation: move 8s infinite alternate; /* butterfly 움직임 */
 }
@@ -99,27 +99,27 @@ position:fixed; /*left:450px; top:750px;*/
 
 
 .bee01{
-  /*top:50px;*/
+  top:50px;
   animation-delay: 12s!important;
   transform:scale(0.9);
 }
 .bee02{
-  /*top:100px;*/
+  top:100px;
   animation-delay: 4s!important;
   transform:scale(1.5); 
 }
 .bee03{
-  /*top:200px;*/
+  top:200px;
   animation-delay: 3s!important;
   transform:scale(1.4); 
 }
 .bee04{
-  /*top:130px;*/
+  top:130px;
   animation-delay: 10s!important;
   transform:scale(0.9);
 }
 .bee05{
-  /*top:100px;*/
+  top:100px;
   animation-delay: 12s!important;
   transform:scale(1.0);
 }
@@ -173,7 +173,7 @@ position:fixed; /*left:450px; top:750px;*/
 @keyframes gameover{
 0%{left:-5000px;bottom:100%;}
 97%{left:-5000px;bottom:100%;}
-100%{ left:0px;/*bottom:15%;*/}
+100%{ left:0px;bottom:30%;}
 }
 
 
