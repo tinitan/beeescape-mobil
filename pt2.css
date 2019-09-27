@@ -143,21 +143,22 @@ position:fixed; /*left:450px; top:750px;*/
  /* 움직이게 함 */
 @-webkit-keyframes move{
 0%{left:0%;}
-20%{left:-30%;top:60%; }
+20%{left:-30%;top:20%; }
 40%{top:-40%; left:170%;}
 60%{top:30%;left:190%;}
-80%{top:30%; left:-50%:}
+80%{top:40%; left:-50%:}
 100%{top:-50%; left:-10%; }
 }
 
 @keyframes move{
 0%{left:0%;}
-20%{left:-30%;top:60%; }
+20%{left:-30%;top:20%; }
 40%{top:-40%; left:170%;}
 60%{top:30%;left:190%;}
-80%{top:30%; left:-50%:}
+80%{top:40%; left:-50%:}
 100%{top:-50%; left:-10%; }
 }
+
 
 
 .gameover{
