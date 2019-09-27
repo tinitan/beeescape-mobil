@@ -173,13 +173,13 @@ position:fixed; /*left:450px; top:750px;*/
 @-webkit-keyframes gameover{
 0%{left:-5000px;bottom:100%;}
 97%{left:-5000px;bottom:100%;}
-100%{ left:0px;bottom:30%;}
+100%{ left:0px;bottom:0%;}
 }
 
 @keyframes gameover{
 0%{left:-5000px;bottom:100%;}
 97%{left:-5000px;bottom:100%;}
-100%{ left:0px;bottom:35%;}
+100%{ left:0px;bottom:0%;}
 }
 
 
