@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
     <TITLE>Dron Invasion</TITLE>
   
-   <!--<link href="bee.css" rel="stylesheet">-->
-
+   
    <!-- 세로모드일때 적용될 CSS -->
     <link rel="stylesheet" media="all and (orientation: portrait)" href="portrait.css" />
      
@@ -15,74 +14,22 @@
   
     
 <style>
-    .btn{
-      text-decoration: none;
-      font-size:2rem;
-      color:white;
-      padding:10px 20px 10px 20px;
-      margin:20px;
-      display:inline-block;
-      border-radius: 10px;
-      transition:all 0.1s;
-      text-shadow: 0px -2px rgba(0, 0, 0, 0.44);
-     }
-
-    .btn:active{
-      transform: translateY(3px);
-    }
-    .btn.blue{
-      background-color: #1f75d9;
-      border-bottom:5px solid #165195;
-      position:fixed; left:200px; bottom:5px;
-    }
-    .btn.blue:active{
-      border-bottom:2px solid #165195;
-    }
-   /* .btn.red{
-      background-color: #ff521e;
-      border-bottom:5px solid #c1370e;
-      position:fixed; left:250px; top:700px;
-    }
-    .btn.red:active{
-      border-bottom:2px solid #c1370e;
-
-    }*/
-
-     #footer {
-
+    
+ #footer {
     position:absolute;
-
     bottom:0;
-
     width:100%;
-
     height:30px;   
-
     background:#ccc;
-
   }
 
-
-   
-
-   
-
   </style>
-  <!-- css 삽입 필요시 분리 -->
-
   
 </head>
 
 <body>
 <body translate="no">
 <div class="wrapper">
-
-
-<!--<div class="timer">
-	<span></span>-->
-	
-<!--<div class="gameover">Time Out</div>-->
-
 
 <h1 style = color:white;>Dron Invasion </h1>
 	<input type="radio" id="container1" class="input-container input-container1"> 
@@ -96,8 +43,8 @@
   <input type="radio" id="container9" class="input-container input-container9">
   <input type="radio" id="container10" class="input-container input-container10">
 
-	<label for="container1" class="bee bee01"onclick="playAudio()" ><span></span></label>  <!-- bird 나타남 -->
-	<label for="container2" class="bee bee02"onclick="playAudio()" ><span></span></label>  <!-- bird 나타남 -->
+	<label for="container1" class="bee bee01"onclick="playAudio()" ><span></span></label>  <!-- dron 나타남 -->
+	<label for="container2" class="bee bee02"onclick="playAudio()" ><span></span></label>  <!-- dron 나타남 -->
 	<label for="container3" class="bee bee03"onclick="playAudio()"><span></span></label>
 	<label for="container4" class="bee bee04"onclick="playAudio()"><span></span></label>
   <label for="container5" class="bee bee05"onclick="playAudio()"><span></span></label>
@@ -108,32 +55,17 @@
   <label for="container10" class="beeb beeb03"onclick="playAudio()"><span></span></label>
 
 
-
-
-
-
-	
-	<!--<div class="butterfly-container butterfly-container-one"><div class="butterfly butterfly-one"></div>
-	</div>
-	<div class="butterfly-container butterfly-container-two" ><div class="butterfly butterfly-two"></div>
-	</div>
-	<div class="butterfly-container butterfly-container-three"><div class="butterfly butterfly-three"></div>
-	</div>
-	<div class="butterfly-container butterfly-container-four"><div class="butterfly butterfly-four"></div> -2개를 임시 정지로 하기위해 1개로 수정함 
-  </div>-->
   <div class="butterfly1-container butterfly1-container--one"><div class="butterfly1 butterfly1--one"></div>
   </div>
 
-
-<!--<span id="point">0</span>-->
 <div id="sum">0</div>
 <img id="sumdown" src="" alt="" width="50" height="50">
 
 <audio id="myAudio">
-  
   <source src="Paradise.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> <!-- jquery 적용 연습용 -->
 <script>
 var x = document.getElementById("myAudio"); 
@@ -146,19 +78,14 @@ function playAudio() {
  if(ss>=10) {
   document.getElementById("sum").innerHTML = "YOU WIN";
   document.getElementById("sumdown").src = "https://leuke-plaatjes.com/files/leuke-plaatjes-emoticons/dieren/dieren-emoticons-2552772479.gif";
-
   x.play();
+
 }
 else{
   sc.play();
 }
  }
   
-
-//function pauseAudio() { 
-//  x.pause(); 
-  
-//} 더블 클릭시 사용후 폐기함 
 </script>
 
 <div class="gameover">Time Out</div>
@@ -168,7 +95,6 @@ else{
 </div>
 
 </div>
- <!--<a class="btn blue" href="index.html">Restart</a>-->
-  <!--<a class="btn red" href="bee.html">Menu</a>-->
+
 </body>
 </html>
