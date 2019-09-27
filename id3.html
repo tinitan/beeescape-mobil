@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+    <TITLE>Dron Invasion</TITLE>
+  
+   
+   <!-- 세로모드일때 적용될 CSS -->
+    <link rel="stylesheet" media="all and (orientation: portrait)" href="pt3.css" />
+     
+    <!-- 가로모드일때 적용될 CSS -->
+    <link rel="stylesheet" media="all and (orientation: landscape)" href="ls3.css" />
+  
+    
+<style>
+    
+ #footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:30px;   
+    background:#ccc;
+  }
+
+  </style>
+  
+</head>
+
+<body>
+<body translate="no">
+<div class="wrapper">
+
+<h1 style = color:white;>Dron Invasion </h1>
+	<input type="radio" id="container1" class="input-container input-container1"> 
+	<input type="radio" id="container2" class="input-container input-container2">
+	<input type="radio" id="container3" class="input-container input-container3">
+	<input type="radio" id="container4" class="input-container input-container4">
+	<input type="radio" id="container5" class="input-container input-container5">
+  <input type="radio" id="container6" class="input-container input-container6">
+  <input type="radio" id="container7" class="input-container input-container7">
+  <input type="radio" id="container8" class="input-container input-container8">
+  <input type="radio" id="container9" class="input-container input-container9">
+  <input type="radio" id="container10" class="input-container input-container10">
+
+	<label for="container1" class="bee bee01"onclick="playAudio()" ><span></span></label>  <!-- dron 나타남 -->
+	<label for="container2" class="bee bee02"onclick="playAudio()" ><span></span></label>  <!-- dron 나타남 -->
+	<label for="container3" class="bee bee03"onclick="playAudio()"><span></span></label>
+	<label for="container4" class="bee bee04"onclick="playAudio()"><span></span></label>
+  <label for="container5" class="bee bee05"onclick="playAudio()"><span></span></label>
+  <label for="container6" class="beea beea01"onclick="playAudio()"><span></span></label>
+  <label for="container7" class="beea beea02"onclick="playAudio()"><span></span></label>
+  <label for="container8" class="beeb beeb01"onclick="playAudio()"><span></span></label>
+  <label for="container9" class="beeb beeb02"onclick="playAudio()"><span></span></label>
+  <label for="container10" class="beeb beeb03"onclick="playAudio()"><span></span></label>
+
+
+  <div class="butterfly1-container butterfly1-container--one"><div class="butterfly1 butterfly1--one"></div>
+  </div>
+
+<div id="sum">0</div>
+<img id="sumdown" src="" alt="" width="50" height="50">
+
+<audio id="myAudio">
+  <source src="Paradise.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> <!-- jquery 적용 연습용 -->
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  /*x.play(); 아래로 이동 조건 만족시 실행   */
+
+ var sc = $("#sum").text(parseInt($("#sum").text())+1); /* 클릭시 두번 실행 됨 ????*/
+ var ss = $("#sum").text(); /* ㅎㅎ 성공 */
+ if(ss>=10) {
+  document.getElementById("sum").innerHTML = "YOU WIN";
+  document.getElementById("sumdown").src = "https://leuke-plaatjes.com/files/leuke-plaatjes-emoticons/dieren/dieren-emoticons-2552772479.gif";
+  x.play();
+
+}
+else{
+  sc.play();
+}
+ }
+  
+</script>
+
+<div class="gameover">Time Out</div>
+<div id="footer"><a href="index.html" style = "text-decoration : none">1st step</a> 
+                 <a href="id2.html" style = "text-decoration : none">2nd step</a>
+                 <a href="id3x.html" style = "text-decoration : none">3rd step</a>
+</div>
+
+</div>
+
+</body>
+</html>
