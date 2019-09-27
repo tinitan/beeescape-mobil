@@ -6,8 +6,12 @@
     <TITLE>Dron Invasion</TITLE>
   
    <link href="bee.css" rel="stylesheet">
-   <link href="portrait.css" rel="stylesheet">
-   <link href="landscape.css" rel="stylesheet">
+   <!-- 세로모드일때 적용될 CSS -->
+    <link rel="stylesheet" media="all and (orientation: portrait)" href="portrait.css" />
+     
+    <!-- 가로모드일때 적용될 CSS -->
+    <link rel="stylesheet" media="all and (orientation: landscape)" href="landscape.css" />
+  
     
 <style>
     .btn{
@@ -58,12 +62,7 @@
   }
 
 
-     <!-- 세로모드일때 적용될 CSS -->
-    <link rel="stylesheet" media="all and (orientation: portrait)" href="portrait.css" />
-     
-    <!-- 가로모드일때 적용될 CSS -->
-    <link rel="stylesheet" media="all and (orientation: landscape)" href="landscape.css" />
-
+   
 
    
 
