@@ -57,7 +57,7 @@ position:fixed; /*left:450px; top:750px;*/
 .input-container9:not(:checked) ~ .beeb02,
 .input-container10:not(:checked) ~ .beeb03
 {
-  animation: move 5s infinite alternate; /* 드론 에니에이션 */
+  animation: move 3s infinite alternate; /* 드론 에니에이션 */
   opacity:1; 
 }
 
@@ -143,20 +143,20 @@ position:fixed; /*left:450px; top:750px;*/
  /* 움직이게 함 */
 @-webkit-keyframes move{
 0%{left:0%;}
-20%{left:-30%;top:60%; }
-40%{top:-40%; left:170%;}
-60%{top:30%;left:190%;}
-80%{top:30%; left:-50%:}
-100%{top:-50%; left:-10%; }
+20%{left:-30%;top:10%; }
+40%{top:-40%; left:130%;}
+60%{top:50%;left:160%;}
+80%{top:-30%; left:-50%:}
+100%{top:10%; left:-10%; }
 }
 
 @keyframes move{
 0%{left:0%;}
-20%{left:-30%;top:60%; }
-40%{top:-40%; left:170%;}
-60%{top:30%;left:190%;}
-80%{top:30%; left:-50%:}
-100%{top:-50%; left:-10%; }
+20%{left:-30%;top:10%; }
+40%{top:-40%; left:130%;}
+60%{top:50%;left:160%;}
+80%{top:-30%; left:-50%:}
+100%{top:10%; left:-10%; }
 }
 
 
