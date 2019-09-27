@@ -187,7 +187,7 @@ position:fixed; /*left:450px; top:750px;*/
   animation:gameover 30s linear forwards; /* 게임시간 */
   font-size:80px; color:white; font-weight:bold; text-align:center; 
   text-indent:0;  
-  line-height:650px;
+  line-height:350px;
 }
 
 @-webkit-keyframes gameover{
