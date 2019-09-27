@@ -184,7 +184,7 @@ position:fixed; /*left:450px; top:750px;*/
 
 
 .bee{
-  background-image: url("./img/dron.png");
+  background-image: url("./img/dron2.png");
   background-size: auto 100%;   /*auto 100%; /* 드론크기 */
   background-repeat: no-repeat;
   margin-top:200px; margin-left:-100px; /* 날아다니는 위치 조정(안보이게 화면 밖으로 위치(-) 조정) */
@@ -193,7 +193,7 @@ position:fixed; /*left:450px; top:750px;*/
   z-index:999;
 }
 .beea{
-  background-image: url("./img/dron.png");
+  background-image: url("./img/dron2.png");
   background-size: auto 100%;   /*auto 100%; /* 드론크기 */
   background-repeat: no-repeat;
   margin-top:100px; margin-left:-50px; /* 날아다니는 위치 조정 (안보이게 화면 밖으로 위치(-) 조정)*/
@@ -202,7 +202,7 @@ position:fixed; /*left:450px; top:750px;*/
 }
 
 .beeb{
-  background-image: url("./img/dron.png");
+  background-image: url("./img/dron2.png");
   background-size: auto 100%;   /*auto 100%; /* 드론크기 */
   background-repeat: no-repeat;
   margin-top:100px; margin-left:-50px; /* 날아다니는 위치 조정(안보이게 화면 밖으로 위치(-) 조정) */
@@ -211,7 +211,7 @@ position:fixed; /*left:450px; top:750px;*/
 }
 
 .butterfly{
-  background-image: url("./img/butterfly001.gif");
+  background-image: url("./img/bee1.gif");
   background-size: auto 100%; /* 나비크기 */
   width: 100px;
   height: 90px;
@@ -224,8 +224,9 @@ position:fixed; /*left:450px; top:750px;*/
           animation-iteration-count: infinite;
 }
 .butterfly1{
-  background-image: url("./img/butterfly55.gif");
+  background-image: url("./img/bee1.png");
   background-size: auto 100%; /* 나비크기 */
+  background-repeat: no-repeat;
   width: 50px;
   height: 40px;
   will-change: background-position;
