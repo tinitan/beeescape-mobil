@@ -14,14 +14,14 @@
   position: relative;
   overflow: hidden;
   display: flex;
-  align-items: center;
+ /* align-items: center;*/
   justify-content: center;
   width: 100%; 
   min-height: 35rem;
   background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: center center;
+  /*background-position: center center;*/
   cursor:crosshair;
      }
     
@@ -37,7 +37,7 @@
   }
 
 /* 벌의 비행 */   
-.dron {max-width:100%px; margin:0 auto; position:relative;}
+.dron {max-width:100%px; margin:0 auto; position:absolute;}
 .dron {
   margin-top:0px; margin-left:0px; /* 날아다니는 위치 조정 */
   width: 23px; height: 30px; /* 새담는*/
@@ -45,7 +45,7 @@
       /*-webkit-transition: 0.3s;  /* cubic-bezier(0,.43,1,0); /*captured 포시 */
       -webkit-animation-delay: -2s!important;
       -webkit-transform:scale(0.1);  
-      -webkit-animation-name: movingPara;
+      -webkit-animation-name: dron;
       -webkit-animation-duration: 6s;
       -webkit-animation-iteration-count: infinite;
 
@@ -53,15 +53,15 @@
       transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
       animation-delay: -2s!important;
       transform:scale(0.1);
-      animation-name: movingPara;
+      animation-name: dron;
       animation-duration: 4s;
       animation-iteration-count: infinite;
     }
     
-    @-webkit-keyframes movingPara {
+    @-webkit-keyframes dron {
       
     0% { margin-left :20%; margin-top: 0%; } 
-      
+       50% { margin-left :-20%; margin-top: 15%; } 
      
       100% {   margin-left: 70%;margin-top: 30%; }
       
@@ -70,7 +70,7 @@
     @keyframes movingPara {
 
       0% { margin-left :20%; margin-top: 0%; } 
-      
+      50% { margin-left :-20%; margin-top: 15%; } 
       100% {   margin-left: 70%;margin-top: 30%; }
       
     }      
@@ -82,11 +82,16 @@
 <div class="wrapper">
  
 <div>
-   <div class="dron"><IMG src="./img/dron1.png"></div>
-<h1>Game<h1>
+   <section class="dron"><IMG src="./img/dron1.png"></section>
+<pre>
+
+
+<h1>Game</h1>
+
 <h2>Touch the Dron<h2>
 <h2>1,2,3 step<h2>
 <h2>무장드론 퇴치 게임<h2>
+</pre>  
 </div>  
 
 
