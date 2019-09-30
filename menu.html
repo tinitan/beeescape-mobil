@@ -36,14 +36,53 @@
 
   }
 
-           
+/* 벌의 비행 */   
+.dron {max-width:100%px; margin:0 auto; position:relative;}
+.dron {
+  margin-top:0px; margin-left:0px; /* 날아다니는 위치 조정 */
+  width: 23px; height: 30px; /* 새담는*/
+ 
+      /*-webkit-transition: 0.3s;  /* cubic-bezier(0,.43,1,0); /*captured 포시 */
+      -webkit-animation-delay: -2s!important;
+      -webkit-transform:scale(0.1);  
+      -webkit-animation-name: movingPara;
+      -webkit-animation-duration: 6s;
+      -webkit-animation-iteration-count: infinite;
+
+      /*transition: 0.3s;  /* cubic-bezier(0,.43,1,0); /*captured 포시 */
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      animation-delay: -2s!important;
+      transform:scale(0.1);
+      animation-name: movingPara;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    
+    @-webkit-keyframes movingPara {
+      
+    0% { margin-left :20%; margin-top: 0%; } 
+      
+     
+      100% {   margin-left: 70%;margin-top: 30%; }
+      
+    }
+    
+    @keyframes movingPara {
+
+      0% { margin-left :20%; margin-top: 0%; } 
+      
+      100% {   margin-left: 70%;margin-top: 30%; }
+      
+    }      
   </style>
   
 </head>
 
 <body translate="no">
 <div class="wrapper">
+ 
 <div>
+   <div class="dron"><IMG src="./img/dron1.png"></div>
 <h1>Game<h1>
 <h2>Touch the Dron<h2>
 <h2>1,2,3 step<h2>
@@ -56,8 +95,7 @@
                  <a href="id3.html" style = "color: green">3rd step</a>
                  <a href="menu.html" style = "color : black">menu</a> 
 </div>
-
-</div>
+ 
  
 </body>
 </html>
